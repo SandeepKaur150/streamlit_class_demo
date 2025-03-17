@@ -18,3 +18,5 @@ else:
 # seaborn
 plot= sns.histplot(filtered_data,x='culmen_length_mm',kde=True)
 st.pyplot(plot.figure)
+sns.barplot(x='species', y='culmen_length_mm', data=data, palette='Blues_d')
+st.pyplot(plt)
